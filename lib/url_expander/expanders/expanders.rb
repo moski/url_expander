@@ -9,6 +9,8 @@ module UrlExpander
     autoload :Twurlnl, 'basic/twurlnl'
     autoload :Shrtst, 'basic/shrtst'
     autoload :Snipurl, 'basic/Snipurl'
+    autoload :Adjix, 'basic/Adjix'
+    
     
     autoload :Bitly, 'api/Bitly'
     autoload :Budurl, 'api/Budurl'

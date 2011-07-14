@@ -7,7 +7,7 @@ module UrlExpander
     # client.expand("http://adjix.com/cm4m")
     #
     class Adjix < UrlExpander::Expanders::Basic
-      PATTERN = %r'(http://adjix\.com(/[\w/]+))'
+      PATTERN = %r'(http://(?:adjix\.com|ad\.vu)(/[\w/]+))'
       attr_reader :parent_klass
       
       def initialize(short_url="", options={})

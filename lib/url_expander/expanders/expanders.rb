@@ -10,6 +10,7 @@ module UrlExpander
     autoload :Shrtst, 'basic/shrtst'
     autoload :Snipurl, 'basic/Snipurl'
     autoload :Adjix, 'basic/Adjix'
+    autoload :Youtube, 'basic/Youtube'
     
     # Using API
     autoload :Bitly, 'api/Bitly'

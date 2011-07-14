@@ -11,6 +11,8 @@ module UrlExpander
     autoload :Snipurl, 'basic/Snipurl'
     autoload :Adjix, 'basic/Adjix'
     autoload :Youtube, 'basic/Youtube'
+    autoload :Tinycc, 'basic/Tinycc'
+    
     
     # Using API
     autoload :Bitly, 'api/Bitly'

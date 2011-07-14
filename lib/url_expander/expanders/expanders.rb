@@ -11,10 +11,11 @@ module UrlExpander
     autoload :Snipurl, 'basic/Snipurl'
     autoload :Adjix, 'basic/Adjix'
     
-    
+    # Using API
     autoload :Bitly, 'api/Bitly'
     autoload :Budurl, 'api/Budurl'
     autoload :Cligs, 'api/Cligs'
     autoload :Isgd, 'api/Isgd'
+    autoload :Googl, 'api/Googl'
   end
 end

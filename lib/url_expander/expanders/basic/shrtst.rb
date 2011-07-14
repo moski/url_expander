@@ -4,7 +4,7 @@ module UrlExpander
     # Expand shrt.st URLS
     # Usage:
     # client = UrlExpander::Client.new
-    # client.expand("http://shrt.st/148p")
+    # client.expand("http://shrt.st/148u")
     #
     class Shrtst < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://shrt\.st(/[\w/]+))'

@@ -1,5 +1,12 @@
 module UrlExpander
   module Expanders
+    
+    #
+    # Expand Twurl.nl URLS
+    # Usage:
+    # client = UrlExpander::Client.new
+    # client.expand("http://twurl.nl/e6mglc")
+    #
     class Twurlnl < UrlExpander::Expanders::Basic
       
       PATTERN = %r'(http://twurl\.nl(/[\w/]+))'
@@ -7,7 +14,7 @@ module UrlExpander
       
       def initialize(short_url="",options={})
         @parent_klass = self.class
-        super(shot_url,options)
+        super(short_url,options)
       end
       
       class Request

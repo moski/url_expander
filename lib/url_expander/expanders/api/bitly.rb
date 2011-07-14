@@ -4,11 +4,11 @@ module UrlExpander
     # Expand Bitly URLS
     # Usage:
     # client = UrlExpander::Client.new
-    # client.expand("http://bit.ly/k3irb0+", :login => 'moski', :api_key => 'XXXXXXXX')
+    # client.expand("http://bit.ly/qpshuI", :login => 'moski', :api_key => 'XXXXXXXX')
     #
     class Bitly < UrlExpander::Expanders::API
       # NOTICE: We ignored the / before the key
-      # http://bit.ly/k3irb0+ => 'k3irb0+' without /
+      # http://bit.ly/qpshuI => 'qpshuI' without /
       PATTERN = %r'(http://bit\.ly/([\w/]+))'
       
       attr_reader :parent_klass

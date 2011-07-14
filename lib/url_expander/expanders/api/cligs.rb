@@ -5,11 +5,11 @@ module UrlExpander
     # Expand Cligs URLS
     # Usage:
     # client = UrlExpander::Client.new
-    # client.expand("http://cli.gs/tep7Th")
+    # client.expand("http://cli.gs/2BAzKa")
     #
     class Cligs < UrlExpander::Expanders::API
       # NOTICE: We ignored the / before the key
-      # http://cli.gs/tep7Th => 'tep7Th' without /
+      # http://cli.gs/2BAzKa => '2BAzKa' without /
       PATTERN = %r'(http://cli\.gs/([\w/]+))'
       
       attr_reader :parent_klass

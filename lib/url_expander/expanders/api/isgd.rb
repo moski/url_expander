@@ -5,11 +5,11 @@ module UrlExpander
     # Expand Isgd URLS
     # Usage:
     # client = UrlExpander::Client.new
-    # client.expand("http://is.gd/vkzrwu")
+    # client.expand("http://is.gd/wsJRhR")
     #
     class Isgd < UrlExpander::Expanders::API
       # NOTICE: We ignored the / before the key
-      # http://is.gd/vkzrwu => 'vkzrwu' without /
+      # http://is.gd/wsJRhR => 'wsJRhR' without /
       PATTERN = %r'(http://is\.gd/([\w/]+))'
       
       attr_reader :parent_klass

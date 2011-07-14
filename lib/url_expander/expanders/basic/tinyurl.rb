@@ -1,5 +1,12 @@
 module UrlExpander
   module Expanders
+    
+    #
+    # Expand Tinyurl URLS
+    # Usage:
+    # client = UrlExpander::Client.new
+    # client.expand("http://tinyurl.com/66sekq5")
+    #
     class Tinyurl < UrlExpander::Expanders::Basic
       
       PATTERN = %r'(http://tinyurl\.com(/[\w/]+))'

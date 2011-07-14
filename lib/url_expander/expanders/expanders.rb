@@ -12,7 +12,7 @@ module UrlExpander
     autoload :Adjix, 'basic/Adjix'
     autoload :Youtube, 'basic/Youtube'
     autoload :Tinycc, 'basic/Tinycc'
-    
+    autoload :Owly, 'basic/Owly'
     
     # Using API
     autoload :Bitly, 'api/Bitly'

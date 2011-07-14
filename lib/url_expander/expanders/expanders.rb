@@ -8,6 +8,7 @@ module UrlExpander
     autoload :Tinyurl, 'basic/tinyurl'
     autoload :Twurlnl, 'basic/twurlnl'
     autoload :Shrtst, 'basic/shrtst'
+    autoload :Snipurl, 'basic/Snipurl'
     
     autoload :Bitly, 'api/Bitly'
     autoload :Budurl, 'api/Budurl'

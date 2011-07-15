@@ -12,7 +12,7 @@ module UrlExpander
     class Bitly < UrlExpander::Expanders::API
       # NOTICE: We ignored the / before the key
       # http://bit.ly/qpshuI => 'qpshuI' without /
-      PATTERN = %r'(http://(?:bit\.ly|j\.mp|tcrn\.ch|nyti\.ms|fxn\.ws)/([\w/]+))'
+      PATTERN = %r'(http://(?:bit\.ly|j\.mp|fxn\.ws)/([\w/]+))'
       
       attr_reader :parent_klass
       attr_accessor :login, :api_key

@@ -31,7 +31,10 @@ module UrlExpander
           expander_klass = exp
         end
       end
-      @expander = (!expander_klass.nil?) ? expander_klass.new(url,options) : UrlExpander::Expanders::Basic.new(url)
+      @expander = (!expander_klass.nil?) ? expander_klass.new(url,options) : nil
+      
+      raise ArgumentError.new('Unknow url') if @expander.nil?
+      
       @long_url = @expander.long_url
     end
   end

@@ -18,7 +18,7 @@ module UrlExpander
     def expand(url="",options = {})
       raise ArgumentError.new('Expander requires a short url') if url.nil? || url.empty?
       
-      exclude_klasses = ['UrlExpander::Expanders::Basic', 'UrlExpander::Expanders::API']
+      exclude_klasses = ['UrlExpander::Expanders::Basic', 'UrlExpander::Expanders::API', 'UrlExpander::Expanders::Scrape']
       
       # Get the names for all the expanders except the basic default one.
       mod     = UrlExpander::Expanders

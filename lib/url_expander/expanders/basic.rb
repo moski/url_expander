@@ -1,5 +1,3 @@
-require 'json'
-
 module UrlExpander
   module Expanders
     
@@ -43,7 +41,7 @@ module UrlExpander
         end
       end
       
-      private
+      protected
       
       def fetch_url(path)
         result = parent_klass::Request.head(path, :follow_redirects => false)

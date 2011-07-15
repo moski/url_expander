@@ -3,6 +3,7 @@ GEM
   specs:
     crack (0.1.8)
     git (1.2.5)
+    hpricot (0.8.4)
     httparty (0.7.8)
       crack (= 0.1.8)
     jeweler (1.6.4)
@@ -19,6 +20,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.0.0)
+  hpricot
   httparty (>= 0.6.1)
   jeweler (~> 1.6.4)
   json

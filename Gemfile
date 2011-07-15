@@ -5,6 +5,7 @@ source "http://rubygems.org"
 
 gem "httparty", ">= 0.6.1"
 gem "json"
+gem "hpricot"
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.

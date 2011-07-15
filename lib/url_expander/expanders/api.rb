@@ -1,3 +1,5 @@
+require 'json'
+
 module UrlExpander
   module Expanders
     class API

@@ -5,7 +5,7 @@ module UrlExpander
     
     # Some websites don't follow the coding standards. They don't provide an
     # api and they don't provide 301 redirect. The only way to get the shorten
-    # url is by parsing the returned html doc, its usually their around an iframe.
+    # url is by parsing the returned html doc.
     # 
     # To use the Scrape class, define your class inside scrape folder. Your class must 
     # provide the following:

@@ -16,6 +16,7 @@ module UrlExpander
     autoload :Tinycc, 'basic/Tinycc'
     autoload :Owly, 'basic/Owly'
     autoload :Digbig, 'basic/Digbig'
+    autoload :Doiop, 'basic/Doiop'
     
     # Using API
     autoload :Bitly, 'api/Bitly'

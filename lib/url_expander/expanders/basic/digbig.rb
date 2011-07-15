@@ -1,7 +1,7 @@
 module UrlExpander
   module Expanders
     #
-    # Expand shrt.st URLS
+    # Expand Digbig URLS
     # Usage:
     # client = UrlExpander::Client.new
     # client.expand("http://digbig.com/3bbd")
@@ -11,8 +11,15 @@ module UrlExpander
       attr_reader :parent_klass
       
       def initialize(short_url="", options={})
-        @parent_klass = self.class
+        @parent_klass = self
         super(short_url, options)
+      end
+      
+      # Custom fetcher.
+      def fetch_url(path)
+        url = super(path)
+        raise UrlExpander::Error.new('page not found',404) if url == "/error_404.html"
+        url
       end
       
       class Request

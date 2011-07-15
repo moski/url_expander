@@ -16,7 +16,7 @@ module UrlExpander
       attr_reader :parent_klass, :short_url
       
       def initialize(short_url, options={})
-        @parent_klass = self.class
+        @parent_klass = self
         @short_url = short_url
         fetch_url
       end

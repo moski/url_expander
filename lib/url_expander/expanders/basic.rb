@@ -34,8 +34,8 @@ module UrlExpander
       
       
       def initialize(short_url="",options={})
-        if short_url.match(parent_klass::PATTERN)
-          @long_url = fetch_url($2)
+        if short_url.match(parent_klass.class::PATTERN)
+          @long_url = parent_klass.fetch_url($2)
         else
           raise 'invalid pattern'
         end
@@ -43,14 +43,19 @@ module UrlExpander
       
       protected
       
+      # Common fetcher used my most expanders.
       def fetch_url(path)
-        result = parent_klass::Request.head(path, :follow_redirects => false)
+        url = nil
+        result = parent_klass.class::Request.head(path, :follow_redirects => false)
         case result.response
           when Net::HTTPMovedPermanently
-            result['Location']
+            url = result['Location']
           when Net::HTTPFound
-            result['location']
+            url = result['location']
         end
+        
+        raise UrlExpander::Error.new('page not found',404) if url.nil?
+        url
       end
     end
   end

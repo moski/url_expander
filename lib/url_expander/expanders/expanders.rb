@@ -23,6 +23,8 @@ module UrlExpander
     autoload :Notlong, 'basic/Notlong'
     autoload :Nutshellurl, 'basic/Nutshellurl'
     autoload :Tighturl, 'basic/Tighturl'
+    autoload :Urlie, 'basic/Urlie'
+    
     
     
     # Using API

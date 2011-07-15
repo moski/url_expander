@@ -10,7 +10,7 @@ module UrlExpander
     #
     class Decenturl < UrlExpander::Expanders::API
       # NOTICE: We ignored the / before the key
-      # http://budurl.com/EYOS2 => 'EYOS2' without /
+      # http://decenturl.com/youtube/medieval => 'youtube/medieval' without /
       PATTERN = %r'(http://(?:(?>[a-z0-9-]*\.)+?|)decenturl\.com/([\w/]+))'
       
       attr_reader :parent_klass, :short_url

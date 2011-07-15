@@ -21,6 +21,7 @@ module UrlExpander
     autoload :Justas, 'basic/Justas'
     autoload :Moourl, 'basic/Moourl'
     autoload :Notlong, 'basic/Notlong'
+    autoload :Nutshellurl, 'basic/Nutshellurl'
     
     
     # Using API

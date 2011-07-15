@@ -24,8 +24,7 @@ module UrlExpander
     autoload :Nutshellurl, 'basic/Nutshellurl'
     autoload :Tighturl, 'basic/Tighturl'
     autoload :Urlie, 'basic/Urlie'
-    
-    
+    autoload :Tco, 'basic/Tco'
     
     # Using API
     autoload :Bitly, 'api/Bitly'
@@ -35,6 +34,7 @@ module UrlExpander
     autoload :Googl, 'api/Googl'
     autoload :Decenturl, 'api/Decenturl'
     autoload :Xrlus, 'api/Xrlus'
+    autoload :Foursq, 'api/4sq'
     
     
     # Using Scrapper

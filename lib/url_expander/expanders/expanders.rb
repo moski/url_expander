@@ -20,6 +20,7 @@ module UrlExpander
     autoload :Easyurljp, 'basic/Easyurljp'
     autoload :Justas, 'basic/Justas'
     autoload :Moourl, 'basic/Moourl'
+    autoload :Notlong, 'basic/Notlong'
     
     
     # Using API

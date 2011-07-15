@@ -19,6 +19,7 @@ module UrlExpander
     autoload :Doiop, 'basic/Doiop'
     autoload :Easyurljp, 'basic/Easyurljp'
     autoload :Justas, 'basic/Justas'
+    autoload :Moourl, 'basic/Moourl'
     
     
     # Using API
@@ -28,6 +29,8 @@ module UrlExpander
     autoload :Isgd, 'api/Isgd'
     autoload :Googl, 'api/Googl'
     autoload :Decenturl, 'api/Decenturl'
+    autoload :Xrlus, 'api/Xrlus'
+    
     
     # Using Scrapper
     autoload :Qsrli, 'scrape/Qsrli'

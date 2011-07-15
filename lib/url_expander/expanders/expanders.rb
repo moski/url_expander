@@ -18,6 +18,8 @@ module UrlExpander
     autoload :Digbig, 'basic/Digbig'
     autoload :Doiop, 'basic/Doiop'
     autoload :Easyurljp, 'basic/Easyurljp'
+    autoload :Justas, 'basic/Justas'
+    
     
     # Using API
     autoload :Bitly, 'api/Bitly'

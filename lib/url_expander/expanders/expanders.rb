@@ -17,6 +17,7 @@ module UrlExpander
     autoload :Owly, 'basic/Owly'
     autoload :Digbig, 'basic/Digbig'
     autoload :Doiop, 'basic/Doiop'
+    autoload :Easyurljp, 'basic/Easyurljp'
     
     # Using API
     autoload :Bitly, 'api/Bitly'

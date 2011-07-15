@@ -22,6 +22,7 @@ module UrlExpander
     autoload :Cligs, 'api/Cligs'
     autoload :Isgd, 'api/Isgd'
     autoload :Googl, 'api/Googl'
+    autoload :Decenturl, 'api/Decenturl'
     
     # Using Scrapper
     autoload :Qsrli, 'scrape/Qsrli'

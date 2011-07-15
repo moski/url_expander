@@ -15,6 +15,7 @@ module UrlExpander
     autoload :Youtube, 'basic/Youtube'
     autoload :Tinycc, 'basic/Tinycc'
     autoload :Owly, 'basic/Owly'
+    autoload :Digbig, 'basic/Digbig'
     
     # Using API
     autoload :Bitly, 'api/Bitly'

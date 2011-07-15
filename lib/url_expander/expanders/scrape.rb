@@ -51,15 +51,19 @@ module UrlExpander
       protected
       
       def fetch_url(path)
+        url = nil
         result = parent_klass::Request.get(path, :follow_redirects => false)
         case result.response
           when Net::HTTPMovedPermanently
-            result['Location']
+            url = result['Location']
           when Net::HTTPFound
-            result['location']
+            url = result['location']
           when Net::HTTPOK
-            parent_klass.scrape_url(result.response.body)
+            url = parent_klass.scrape_url(result.response.body)
         end
+        
+        raise UrlExpander::Error.new('page not found',404) if url.nil?
+        url
       end
       
     end

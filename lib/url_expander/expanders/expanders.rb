@@ -36,6 +36,7 @@ module UrlExpander
     
     # Using Scrapper
     autoload :Qsrli, 'scrape/Qsrli'
+    autoload :Shorl, 'scrape/Shorl'
     
   end
 end

@@ -13,11 +13,9 @@ The idea is simple, One expander to expand them all. I've been working on an ana
 
 === Options
 
-* :nested_shortening(default true), Do nested shortening.
-
-  UrlExpander::Client.expand("http://t.co/ZGEGdas")  => "http://www.blink182.com/upallnight/"
-  UrlExpander::Client.expand("http://t.co/ZGEGdas", :nested_shortening => false)  => "http://bit.ly/oi029o"
-
+* Nested shortening is turned on by default (:nested_shortening => true)
+   UrlExpander::Client.expand("http://t.co/ZGEGdas")  => "http://www.blink182.com/upallnight/"
+   UrlExpander::Client.expand("http://t.co/ZGEGdas", :nested_shortening => false)  => "http://bit.ly/oi029o"
 
 
 Services are divided into 3 categories:

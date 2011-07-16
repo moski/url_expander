@@ -8,14 +8,26 @@ The idea is simple, One expander to expand them all. I've been working on an ana
 
 == How to use
 
+Download the config used to authenticate with some of the shortening services
+
+  curl -s https://raw.github.com/gist/1086114/c5c401e811effc3e99ed37ae9503f267877d8e68/url_expander_credentials.yml -o ~/url_expander_credentials.yml
+
+Require and Use
+
   require 'url_expander'
   UrlExpander::Client.expand('http://tinyurl.com/66sekq5')
 
 === Options
 
-* Nested shortening is turned on by default (:nested_shortening => true)
+* :nested_shortening -- Nested shortening is turned on by default (:nested_shortening => true)
    UrlExpander::Client.expand("http://t.co/ZGEGdas")  => "http://www.blink182.com/upallnight/"
    UrlExpander::Client.expand("http://t.co/ZGEGdas", :nested_shortening => false)  => "http://bit.ly/oi029o"
+
+* :limit -- If the nested_shortening is turned on, then :limit controls the max number of redirection allowed. Default value is 10
+   UrlExpander::Client.expand('http://tinyurl.com/66sekq5', :limit => 4)
+
+* :config_file -- Some services Require credentials to access the api (such as bitly). You need to provide YAML file with the access credentials. Default is "~/url_expander_credentials.yml". 
+   UrlExpander::Client.expand('http://tinyurl.com/66sekq5', :config_file => '/Users/moski/url_expander_credentials.yml')
 
 
 Services are divided into 3 categories:

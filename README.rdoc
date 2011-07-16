@@ -148,11 +148,10 @@ Each service must subclass one of these classes.
 All you have to do now is register you class. Simple enough :)
 
   module UrlExpander
-	  module Expanders
-	    autoload :Tinyurl, 'basic/tinyurl'
-	  end
-  end
-	
+    module Expanders
+      autoload :Tinyurl, 'basic/tinyurl' 
+    end
+  end	
 	
 == Contributing to url_expander
  

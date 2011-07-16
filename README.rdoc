@@ -3,19 +3,28 @@
 The idea is simple, One expander to expand them all. I've been working on an analytical tool for twitter.com and i wanted a way to expand all the shortened urls. Url_expander is a good start, it covers 34 services. I tried to make it as simple as possible to extend & add new services.
 
 == Install
-	
-	gem install url_expander
+
+  gem install url_expander
 
 == How to use
-	
-	require 'url_expander'
-	UrlExpander::Client.expand("http://tinyurl.com/66sekq5")
+
+  require 'url_expander'
+  UrlExpander::Client.expand('http://tinyurl.com/66sekq5')
+
+=== Options
+
+* :nested_shortening(default true), Do nested shortening.
+
+  UrlExpander::Client.expand("http://t.co/ZGEGdas")  => "http://www.blink182.com/upallnight/"
+  UrlExpander::Client.expand("http://t.co/ZGEGdas", :nested_shortening => false)  => "http://bit.ly/oi029o"
+
+
 
 Services are divided into 3 categories:
-*Provide an API for expanding
-*Support 301 redirection
-*Manual Scraping 
 
+* Provide an API for expanding
+* Support 301 redirection
+* Manual Scraping 
 
 
 == Contributing to url_expander

@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand Tighturl URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://tighturl.com/3eoz")
+    # UrlExpander::Client.expand("http://tighturl.com/3eoz")
     #
     class Tighturl < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://tighturl\.com(/[\w/]+))'

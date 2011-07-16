@@ -3,9 +3,8 @@ module UrlExpander
     #
     # Expand snipurl.com URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://snipurl.com/209hem")
-    # client.expand("http://sn.im/209hem") 
+    # UrlExpander::Client.expand("http://snipurl.com/209hem")
+    # UrlExpander::Client.expand("http://sn.im/209hem") 
     #
     # @NOTE: This service does provide an api but it is not working
     #            

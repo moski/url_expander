@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand url.ie URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://url.ie/cert")
+    # UrlExpander::Client.expand("http://url.ie/cert")
     #
     class Urlie < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://url\.ie(/[\w/]+))'

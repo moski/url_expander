@@ -7,17 +7,21 @@ require 'url_expander/expanders/expanders'
 
 module UrlExpander
   class Client
-    attr_reader :long_url, :short_url, :expander
-    
-    # Creation of a new client.
-    def initialize
-      @short_url = @long_url = nil 
-    end
-    
     # Expand a given url.
-    def expand(url="",options = {})
-      raise ArgumentError.new('Expander requires a short url') if url.nil? || url.empty?
+    def self.expand(url="",options = {})
       
+      # Setup the default options
+      options[:nested_shortening] = true unless options.has_key?(:nested_shortening)
+      if options[:nested_shortening]
+        options[:limit] = 10 unless options.has_key?(:limit)
+      end
+      options[:config_file] = '~/url_expander_credentials.yml' unless options[:config_file]
+      
+      # We Reached the maximum number of redirections, quit.
+      raise ArgumentError, 'HTTP redirect too deep' if options[:nested_shortening] && options[:limit] == 0
+      
+      # Make sure we have a url
+      raise ArgumentError.new('Expander requires a short url') if url.nil? || url.empty?
       exclude_klasses = ['UrlExpander::Expanders::Basic', 'UrlExpander::Expanders::API', 'UrlExpander::Expanders::Scrape']
       
       # Get the names for all the expanders except the basic default one.
@@ -33,9 +37,17 @@ module UrlExpander
       end
       @expander = (!expander_klass.nil?) ? expander_klass.new(url,options) : nil
       
-      raise ArgumentError.new('Unknow url') if @expander.nil?
+      if @expander.nil? && !options[:is_redirection]
+        raise ArgumentError.new('Unknow url') 
+      end
       
-      @long_url = @expander.long_url
+      if options[:nested_shortening] & !@expander.nil?
+        options[:limit] -= 1
+        options[:is_redirection] = true
+        UrlExpander::Client.expand(@expander.long_url, options)
+      else
+        (@expander.nil?) ? url : @expander.long_url
+      end
     end
   end
   

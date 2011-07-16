@@ -4,8 +4,7 @@ module UrlExpander
     #
     # Expand Cligs URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://cli.gs/2BAzKa")
+    # UrlExpander::Client.expand("http://cli.gs/2BAzKa")
     #
     class Cligs < UrlExpander::Expanders::API
       # NOTICE: We ignored the / before the key

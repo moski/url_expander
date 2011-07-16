@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand ow.ly URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://ow.ly/5EVkL")
+    # UrlExpander::Client.expand("http://ow.ly/5EVkL")
     #
     class Owly < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://ow\.ly(/[\w/]+))'

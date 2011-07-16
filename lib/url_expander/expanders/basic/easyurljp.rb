@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand easyurl.jp URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://easyurl.jp/1qdv")
+    # UrlExpander::Client.expand("http://easyurl.jp/1qdv")
     #
     class Easyurljp < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://easyurl\.jp(/[\w/]+))'

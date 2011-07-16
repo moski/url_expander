@@ -3,9 +3,8 @@ module UrlExpander
     #
     # Expand Youtu.be URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://youtu.be/bINUfbLV_0M")
-    # client.expand("http://y2u.be/bINUfbLV_0M")
+    # UrlExpander::Client.expand("http://youtu.be/bINUfbLV_0M")
+    # UrlExpander::Client.expand("http://y2u.be/bINUfbLV_0M")
     #
     class Youtube < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://(?:youtu\.be|y2u\.be)(/[\w/]+))'

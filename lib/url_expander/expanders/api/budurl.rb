@@ -4,8 +4,7 @@ module UrlExpander
     #
     # Expand Budurl URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://budurl.com/EYOS2")
+    # UrlExpander::Client.expand("http://budurl.com/EYOS2")
     #
     class Budurl < UrlExpander::Expanders::API
       # NOTICE: We ignored the / before the key

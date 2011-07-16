@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand just.as URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://just.as/amMF3i")
+    # UrlExpander::Client.expand("http://just.as/amMF3i")
     #
     class Justas < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://just\.as(/[\w/]+))'

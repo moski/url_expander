@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand Twitter shortner t.co
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://t.co/ZGEGdas")
+    # UrlExpander::Client.expand("http://t.co/ZGEGdas")
     #
     class Tco < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://t\.co(/[\w/]+))'

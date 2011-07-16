@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand moourl.com URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://moourl.com/flsho")
+    # UrlExpander::Client.expand("http://moourl.com/flsho")
     #
     class Moourl < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://moourl\.com(/[\w/]+))'

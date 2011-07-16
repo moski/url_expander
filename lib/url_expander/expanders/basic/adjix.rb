@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand Adjix URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://adjix.com/cm4m")
+    # UrlExpander::Client.expand("http://adjix.com/cm4m")
     #
     class Adjix < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://(?:adjix\.com|ad\.vu)(/[\w/]+))'

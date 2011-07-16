@@ -51,3 +51,20 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+
+namespace :url_expander do
+  desc "Generate config file"
+  task(:generate_config) do
+    credentials = {
+        :bitly => {
+          :login   => 'BITLY LOGIN',
+          :api_key => 'BITLY API KEY' 
+        }
+      }
+    File.open('url_expander_credentials.yml', 'w') { |file| YAML.dump(credentials, file) }
+  end
+end
+
+
+

@@ -4,8 +4,7 @@ module UrlExpander
     #
     # Expand Tinyurl URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://tinyurl.com/66sekq5")
+    # UrlExpander::Client.expand("http://tinyurl.com/66sekq5")
     #
     class Tinyurl < UrlExpander::Expanders::Basic
       

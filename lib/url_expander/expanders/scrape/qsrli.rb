@@ -1,10 +1,9 @@
 module UrlExpander
   module Expanders
     #
-    # Expand shrt.st URLS
+    # Expand Qsrli URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://qsr.li/5Zg9")
+    # UrlExpander::Client.expand("http://qsr.li/5Zg9")
     #
     class Qsrli < UrlExpander::Expanders::Scrape
       PATTERN = %r'(http://qsr\.li(/[\w/]+))'

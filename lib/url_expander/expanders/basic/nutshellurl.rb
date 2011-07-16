@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand nutshellurl.com URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://nutshellurl.com/1v38")
+    # UrlExpander::Client.expand("http://nutshellurl.com/1v38")
     #
     class Nutshellurl < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://nutshellurl\.com/([\w/]+))'

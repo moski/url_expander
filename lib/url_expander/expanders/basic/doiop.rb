@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand doiop.com URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://doiop.com/dz8896")
+    # UrlExpander::Client.expand("http://doiop.com/dz8896")
     #
     class Doiop < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://doiop\.com(/[\w/]+))'

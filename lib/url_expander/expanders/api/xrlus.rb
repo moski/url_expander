@@ -4,8 +4,7 @@ module UrlExpander
     #
     # Expand Xrl.us URLS -- http://metamark.net/
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://xrl.us/bkz5iy")
+    # UrlExpander::Client.expand("http://xrl.us/bkz5iy")
     #
     class Xrlus < UrlExpander::Expanders::API
       # NOTICE: We ignored the / before the key

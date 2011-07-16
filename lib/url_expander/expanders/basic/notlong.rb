@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand notlong.com URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://moski.notlong.com")
+    # UrlExpander::Client.expand("http://moski.notlong.com")
     #
     class Notlong < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://([\w/]+)\.notlong\.com)'

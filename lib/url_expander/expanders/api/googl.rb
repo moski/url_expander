@@ -4,8 +4,7 @@ module UrlExpander
     #
     # Expand Google URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://goo.gl/DRppM")
+    # UrlExpander::Client.expand("http://goo.gl/DRppM")
     #
     class Googl < UrlExpander::Expanders::API
       # NOTICE: We ignored the / before the key

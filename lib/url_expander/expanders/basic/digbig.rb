@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand Digbig URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://digbig.com/3bbd")
+    # UrlExpander::Client.expand("http://digbig.com/3bbd")
     #
     class Digbig < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://(?:(?>[a-z0-9-]*\.)+?|)digbig\.com(/[\w/]+))'

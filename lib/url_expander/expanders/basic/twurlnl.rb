@@ -4,8 +4,7 @@ module UrlExpander
     #
     # Expand Twurl.nl URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://twurl.nl/e6mglc")
+    # UrlExpander::Client.expand("http://twurl.nl/e6mglc")
     #
     class Twurlnl < UrlExpander::Expanders::Basic
       

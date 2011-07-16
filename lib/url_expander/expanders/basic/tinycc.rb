@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand tiny.cc URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://tiny.cc/pabx5")
+    # UrlExpander::Client.expand("http://tiny.cc/pabx5")
     #
     class Tinycc < UrlExpander::Expanders::Basic
       PATTERN = %r'(http://tiny\.cc(/[\w/]+))'

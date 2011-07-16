@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand Newyork times
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://nyti.ms/dzy2b7", :login => 'moski', :api_key => 'XXXXXXXX')
+    # UrlExpander::Client.expand("http://nyti.ms/dzy2b7")
     #
     class Nytims < UrlExpander::Expanders::Bitly
       PATTERN = %r'(http://nyti\.ms/([\w/]+))'

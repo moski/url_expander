@@ -4,8 +4,7 @@ module UrlExpander
     #
     # Expand Isgd URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://is.gd/wsJRhR")
+    # UrlExpander::Client.expand("http://is.gd/wsJRhR")
     #
     class Isgd < UrlExpander::Expanders::API
       # NOTICE: We ignored the / before the key

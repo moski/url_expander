@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand shorl.com URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://shorl.com/nigekohalenu")
+    # UrlExpander::Client.expand("http://shorl.com/nigekohalenu")
     #
     class Shorl < UrlExpander::Expanders::Scrape
       PATTERN = %r'(http://shorl\.com(/[\w/]+))'

@@ -3,8 +3,7 @@ module UrlExpander
     #
     # Expand http://simurl.com/ URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://simurl.com/fendaz")
+    # UrlExpander::Client.expand("http://simurl.com/fendaz")
     #
     class Simurl < UrlExpander::Expanders::Scrape
       PATTERN = %r'(http://simurl\.com(/[\w/]+))'

@@ -4,9 +4,8 @@ module UrlExpander
     #
     # Expand Budurl URLS
     # Usage:
-    # client = UrlExpander::Client.new
-    # client.expand("http://decenturl.com/youtube/medieval")
-    # client.expand("http://youtube.decenturl.com/medieval")
+    # UrlExpander::Client.expand("http://decenturl.com/youtube/medieval")
+    # UrlExpander::Client.expand("http://youtube.decenturl.com/medieval")
     #
     class Decenturl < UrlExpander::Expanders::API
       # NOTICE: We ignored the / before the key

@@ -59,10 +59,52 @@ Require and Use
    UrlExpander::Client.expand("http://xrl.us/bkz5iy")
 * adjix.com
    UrlExpander::Client.expand("http://adjix.com/cm4m")
-
-
-
-
+* digbig.com
+   UrlExpander::Client.expand("http://digbig.com/3bbd")
+* doiop.com
+   UrlExpander::Client.expand("http://doiop.com/dz8896")
+* easyurl.jp
+   UrlExpander::Client.expand("http://easyurl.jp/1qdv")
+* just.as
+   UrlExpander::Client.expand("http://just.as/amMF3i")
+* moourl.com
+   UrlExpander::Client.expand("http://moourl.com/flsho")
+* notlong.com
+   UrlExpander::Client.expand("http://moski.notlong.com")
+* nutshellurl.com
+   UrlExpander::Client.expand("http://nutshellurl.com/1v38")
+* ow.ly
+   UrlExpander::Client.expand("http://ow.ly/5EVkL")
+* shrt.st
+   UrlExpander::Client.expand("http://shrt.st/148u")
+* snipurl.com, sn.im, cl.lk, snipr.com,  snurl.com
+   UrlExpander::Client.expand("http://snipurl.com/209hem")
+   UrlExpander::Client.expand("http://sn.im/209hem")
+   UrlExpander::Client.expand("http://cl.lk/209hem")
+   UrlExpander::Client.expand("http://snipr.com/209hem")
+   UrlExpander::Client.expand("http://snurl.com/209hem")
+* t.co
+   UrlExpander::Client.expand("http://t.co/ZGEGdas")
+* tighturl.com
+   UrlExpander::Client.expand("http://tighturl.com/3eoz")
+* tiny.cc
+   UrlExpander::Client.expand("http://tiny.cc/pabx5")
+* tinyurl.com
+   UrlExpander::Client.expand("http://tinyurl.com/66sekq5")
+* twurl.nl
+   UrlExpander::Client.expand("http://twurl.nl/e6mglc")
+* url.ie
+   UrlExpander::Client.expand("http://url.ie/cert")
+* youtu.be
+   UrlExpander::Client.expand("http://youtu.be/bINUfbLV_0M")
+* y2u.be
+   UrlExpander::Client.expand("http://y2u.be/bINUfbLV_0M")
+* qsr.li
+   UrlExpander::Client.expand("http://qsr.li/5Zg9")
+* shorl.com
+   UrlExpander::Client.expand("http://shorl.com/nigekohalenu")
+* simurl.com
+   UrlExpander::Client.expand("http://simurl.com/fendaz")
 
 
 

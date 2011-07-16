@@ -135,16 +135,14 @@ Each service must subclass one of these classes.
       super(short_url, options)
     end
     
-    # Request class will include Httparry and set the base_uri for that
+    # Request class will include httpartty and set the base_uri for that
     # service
     class Request
       include HTTParty
       base_uri 'http://tinyurl.com'
     end
   end
-	
 
-	
 All you have to do now is register you class. Simple enough :)
 
   module UrlExpander
@@ -152,6 +150,53 @@ All you have to do now is register you class. Simple enough :)
       autoload :Tinyurl, 'basic/tinyurl' 
     end
   end	
+
+== Subclass UrlExpander::Expanders::API
+If the service provides an api why not use it. UrlExpander::Expanders::API gives you a little more flexibly that the basic one but requires more code. 
+
+  class Googl < UrlExpander::Expanders::API
+    # A pattern is used by the basic class to match the url and extract the the shortening key.
+    # NOTICE: We ignored the / before the key
+    # http://goo.gl/DRppM => 'DRppM' without /
+    PATTERN = %r'(http://goo\.gl/([\w/]+))'
+    
+    # Reference to the class used by the base class to access Request class within  
+    attr_reader :parent_klass
+      
+    # initialize function to do custom initialization
+    # make sure to set the @parent_kass and call super
+    # calling super will only exract the shortening for the url using the pattern defined above.
+    # You need to manually call fetch_url.
+    def initialize(short_url, options={})
+      @parent_klass = self
+      super(short_url,options)
+      fetch_url
+    end
+      
+    # Request class will include httpartty and set the base_uri for that service.
+    class Request
+      include HTTParty
+      base_uri 'https://www.googleapis.com'
+      headers 'Content-Type' => 'application/json'
+      headers "Content-length" => "0"
+    end
+      
+      
+    private
+    
+    # A custom fetcher function expand the url using the api.  
+    def fetch_url
+      response = Request.get("/urlshortener/v1/url?shortUrl=http://goo.gl/#{@shortner_key}")
+      if response.code == 200
+        @long_url  = response['longUrl']
+      else
+        error = (JSON.parse response.body)['error']
+        raise UrlExpander::Error.new(error['message'],response.code)
+      end
+    end
+  end
+
+Thats about it, don't forget to register your class.
 	
 == Contributing to url_expander
  

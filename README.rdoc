@@ -108,13 +108,45 @@ Require and Use
 
 
 
-Services are divided into 3 categories:
+== Adding a new service
+url_expander has 3 main classes
 
-* Provide an API for expanding
-* Support 301 redirection
-* Manual Scraping 
+* UrlExpander::Expanders::Basic: For services that provides 301 redirect.
+* UrlExpander::Expanders::API: For services that provide expand api.
+* UrlExpander::Expanders::Scrape: No api, no 301 redirect, manual scraping.
 
+Each service must subclass one of these classes.
 
+== Subclass UrlExpander::Expanders::Basic
+
+  class Tinyurl < UrlExpander::Expanders::Basic
+    # A pattern is used by the basic class to match the url and extract the 
+    # the shortning key.
+    PATTERN = %r'(http://tinyurl\.com(/[\w/]+))'
+    
+    # Reference to the class used by the base class to access Request class within
+    attr_reader :parent_klass
+    
+    # initialize function to do custom initialization
+    # make sure to set the @parent_kass and call super
+    # Calling super with will extract the key and calls fetch_url
+    def initialize(short_url="", options={})
+      @parent_klass = self
+      super(short_url, options)
+    end
+    
+		# Request class will include Httparry and set the base_uri for that
+		# service
+    class Request
+      include HTTParty
+      base_uri 'http://tinyurl.com'
+    end
+  end
+
+Simple enough :)
+	
+	
+	
 == Contributing to url_expander
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet

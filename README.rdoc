@@ -142,9 +142,16 @@ Each service must subclass one of these classes.
       base_uri 'http://tinyurl.com'
     end
   end
-
-Simple enough :)
 	
+
+	
+All you have to do now is register you class. Simple enough :)
+
+  module UrlExpander
+	  module Expanders
+	    autoload :Tinyurl, 'basic/tinyurl'
+	  end
+  end
 	
 	
 == Contributing to url_expander

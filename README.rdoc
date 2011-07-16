@@ -38,6 +38,32 @@ Require and Use
    UrlExpander::Client.expand("http://bit.ly/qpshuI")
 * j.mp
    UrlExpander::Client.expand("http://j.mp/qpshuI")
+* budurl.com
+   UrlExpander::Client.expand("http://budurl.com/EYOS2")
+* cli.gs
+   UrlExpander::Client.expand("http://cli.gs/2BAzKa")
+* decenturl.com
+   UrlExpander::Client.expand("http://decenturl.com/youtube/medieval")
+   UrlExpander::Client.expand("http://youtube.decenturl.com/medieval")
+* fxn.ws
+   UrlExpander::Client.expand("http://fxn.ws/pBewvL")
+* goo.gl
+   UrlExpander::Client.expand("http://goo.gl/DRppM")
+* is.gd
+   UrlExpander::Client.expand("http://is.gd/wsJRhR")
+* nyti.ms
+   UrlExpander::Client.expand("http://nyti.ms/dzy2b7")
+* tcrn.ch
+   UrlExpander::Client.expand("http://tcrn.ch/oe50JN")
+* xrl.us
+   UrlExpander::Client.expand("http://xrl.us/bkz5iy")
+* adjix.com
+   UrlExpander::Client.expand("http://adjix.com/cm4m")
+
+
+
+
+
 
 
 Services are divided into 3 categories:

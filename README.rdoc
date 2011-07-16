@@ -135,8 +135,8 @@ Each service must subclass one of these classes.
       super(short_url, options)
     end
     
-		# Request class will include Httparry and set the base_uri for that
-		# service
+    # Request class will include Httparry and set the base_uri for that
+    # service
     class Request
       include HTTParty
       base_uri 'http://tinyurl.com'

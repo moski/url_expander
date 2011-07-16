@@ -33,12 +33,11 @@ Require and Use
 == Supported Services:
 
 * 4sq.com
-  UrlExpander::Client.expand("http://4sq.com/pQkuZk")
+   UrlExpander::Client.expand("http://4sq.com/pQkuZk")
 * bit.ly
-  UrlExpander::Client.expand("http://bit.ly/qpshuI")
+   UrlExpander::Client.expand("http://bit.ly/qpshuI")
 * j.mp
-
-
+   UrlExpander::Client.expand("http://j.mp/qpshuI")
 
 
 Services are divided into 3 categories:

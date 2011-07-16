@@ -13,7 +13,7 @@ Download the config used to authenticate with some of the shortening services
   curl -s https://raw.github.com/gist/1086114/c5c401e811effc3e99ed37ae9503f267877d8e68/url_expander_credentials.yml -o ~/url_expander_credentials.yml
 
 Require and Use
-
+  require 'rubygems' # if ruby < 1.9
   require 'url_expander'
   UrlExpander::Client.expand('http://tinyurl.com/66sekq5')
 
@@ -27,7 +27,18 @@ Require and Use
    UrlExpander::Client.expand('http://tinyurl.com/66sekq5', :limit => 4)
 
 * :config_file -- Some services Require credentials to access the api (such as bitly). You need to provide YAML file with the access credentials. Default is "~/url_expander_credentials.yml". 
-   UrlExpander::Client.expand('http://tinyurl.com/66sekq5', :config_file => '/Users/moski/url_expander_credentials.yml')
+   UrlExpander::Client.expand('http://bit.ly/qpshuI', :config_file => '/Users/moski/url_expander_credentials.yml')
+
+
+== Supported Services:
+
+* 4sq.com
+  UrlExpander::Client.expand("http://4sq.com/pQkuZk")
+* bit.ly
+  UrlExpander::Client.expand("http://bit.ly/qpshuI")
+* j.mp
+
+
 
 
 Services are divided into 3 categories:

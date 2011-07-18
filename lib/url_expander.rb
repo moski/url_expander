@@ -15,7 +15,7 @@ module UrlExpander
       if options[:nested_shortening]
         options[:limit] = 10 unless options.has_key?(:limit)
       end
-      options[:config_file] = '~/url_expander_credentials.yml' unless options[:config_file]
+      options[:config_file] = "#{ENV['HOME']}/url_expander_credentials.yml" unless options[:config_file]
       
       # We Reached the maximum number of redirections, quit.
       raise ArgumentError, 'HTTP redirect too deep' if options[:nested_shortening] && options[:limit] == 0

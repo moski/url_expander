@@ -25,6 +25,9 @@ module UrlExpander
     autoload :Tighturl, 'basic/tighturl'
     autoload :Urlie, 'basic/urlie'
     autoload :Tco, 'basic/tco'
+    autoload :Itunes, 'basic/itunes'
+    autoload :Fbme, 'basic/fbme'
+    
     
     # Using API
     autoload :Bitly, 'api/bitly'
@@ -32,6 +35,8 @@ module UrlExpander
     autoload :Tcrnch, 'api/tcrnch'
     autoload :Nytims, 'api/nytims'
     autoload :Fxnws, 'api/fxnws'
+    autoload :Amzn, 'api/amzn'
+    
     
     autoload :Budurl, 'api/budurl'
     autoload :Cligs, 'api/cligs'

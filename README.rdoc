@@ -1,6 +1,6 @@
 = url_expander
 
-The idea is simple, One expander to expand them all. I've been working on an analytical tool for twitter.com and i wanted a way to expand all the shortened urls. Url_expander is a good start, it covers 34 services. I tried to make it as simple as possible to extend & add new services.
+The idea is simple, One expander to expand them all. I've been working on an analytical tool for twitter.com and i wanted a way to expand all the shortened urls. Url_expander is a good start, it covers (13,231 bit.ly domains +  28 different services). I tried to make it as simple as possible to extend & add new services.
 
 == Install
 
@@ -103,7 +103,12 @@ Require and Use
    UrlExpander::Client.expand("http://shorl.com/nigekohalenu")
 * simurl.com
    UrlExpander::Client.expand("http://simurl.com/fendaz")
-
+* fb.me
+   UrlExpander::Client.expand("http://fb.me/KLfffqy3")
+* itun.es
+   UrlExpander::Client.expand("http://itun.es/igG8XL")
+* ur1.ca
+   UrlExpander::Client.expand("http://ur1.ca/4qcly")
 
 
 == Adding a new service

@@ -32,10 +32,14 @@ Require and Use
 
 == Supported Services:
 
-* 4sq.com
-   UrlExpander::Client.expand("http://4sq.com/pQkuZk")
-* bit.ly
+* bit.ly and bitly domains(13,231 domains as of July 19-2011)
    UrlExpander::Client.expand("http://bit.ly/qpshuI")
+	 UrlExpander::Client.expand("http://4sq.com/pQkuZk")
+	 UrlExpander::Client.expand("http://fxn.ws/pBewvL")
+	 UrlExpander::Client.expand("http://tcrn.ch/oe50JN")
+   UrlExpander::Client.expand("http://nyti.ms/dzy2b7")
+	 ....
+	
 * j.mp
    UrlExpander::Client.expand("http://j.mp/qpshuI")
 * budurl.com
@@ -45,16 +49,10 @@ Require and Use
 * decenturl.com
    UrlExpander::Client.expand("http://decenturl.com/youtube/medieval")
    UrlExpander::Client.expand("http://youtube.decenturl.com/medieval")
-* fxn.ws
-   UrlExpander::Client.expand("http://fxn.ws/pBewvL")
 * goo.gl
    UrlExpander::Client.expand("http://goo.gl/DRppM")
 * is.gd
    UrlExpander::Client.expand("http://is.gd/wsJRhR")
-* nyti.ms
-   UrlExpander::Client.expand("http://nyti.ms/dzy2b7")
-* tcrn.ch
-   UrlExpander::Client.expand("http://tcrn.ch/oe50JN")
 * xrl.us
    UrlExpander::Client.expand("http://xrl.us/bkz5iy")
 * adjix.com

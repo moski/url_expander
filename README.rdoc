@@ -34,11 +34,11 @@ Require and Use
 
 * bit.ly and bitly domains(13,231 domains as of July 19-2011)
    UrlExpander::Client.expand("http://bit.ly/qpshuI")
-	 UrlExpander::Client.expand("http://4sq.com/pQkuZk")
-	 UrlExpander::Client.expand("http://fxn.ws/pBewvL")
-	 UrlExpander::Client.expand("http://tcrn.ch/oe50JN")
+   UrlExpander::Client.expand("http://4sq.com/pQkuZk")
+   UrlExpander::Client.expand("http://fxn.ws/pBewvL")
+   UrlExpander::Client.expand("http://tcrn.ch/oe50JN")
    UrlExpander::Client.expand("http://nyti.ms/dzy2b7")
-	 ....
+   ....
 	
 * j.mp
    UrlExpander::Client.expand("http://j.mp/qpshuI")

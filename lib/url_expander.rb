@@ -9,7 +9,6 @@ module UrlExpander
   class Client
     # Expand a given url.
     def self.expand(url="",options = {})
-      
       # Setup the default options
       options[:nested_shortening] = true unless options.has_key?(:nested_shortening)
       if options[:nested_shortening]
@@ -31,7 +30,9 @@ module UrlExpander
       
       # Find the correct expander
       expanders.each do |exp|
-        if(exp::PATTERN.match(url))
+        if exp.respond_to?("is_me?")
+          expander_klass = exp if exp.is_me?(url)
+        elsif(exp::PATTERN.match(url))
           expander_klass = exp
         end
       end

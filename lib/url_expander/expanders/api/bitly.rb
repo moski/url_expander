@@ -1,3 +1,8 @@
+$:.unshift(File.dirname(__FILE__))
+
+require 'bitly/domains'
+require 'digest/md5'
+
 module UrlExpander
   module Expanders
     #
@@ -10,9 +15,9 @@ module UrlExpander
     # UrlExpander::Client.expand("http://fxn.ws/pBewvL") 
     #
     class Bitly < UrlExpander::Expanders::API
-      # NOTICE: We ignored the / before the key
-      # http://bit.ly/qpshuI => 'qpshuI' without /
-      PATTERN = %r'(http://(?:bit\.ly|j\.mp)/([\w/]+))'
+      # Note: Don't use this for a global matching, it will match all
+      # urls. Instead we have a custom matching function def self.is_me?(url)
+      PATTERN = %r'(?:https?://){1}([^/]*)/([\w/]+)'
       
       attr_reader :parent_klass
       attr_accessor :login, :api_key
@@ -27,6 +32,16 @@ module UrlExpander
         
         super(short_url,options)
         fetch_url
+      end
+      
+      # A custom pattern matching function
+      def self.is_me?(url)
+        if url.match(PATTERN)
+          domain_digest = Digest::MD5.hexdigest($1)
+          DOMAINS.include?(domain_digest)
+        else
+          false
+        end
       end
       
       class Request

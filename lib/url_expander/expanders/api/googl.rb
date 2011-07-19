@@ -26,7 +26,6 @@ module UrlExpander
         headers "Content-length" => "0"
       end
       
-      
       private
       
       def fetch_url

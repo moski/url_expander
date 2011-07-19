@@ -32,11 +32,11 @@ module UrlExpander
     
     # Using API
     autoload :Bitly, 'api/bitly'
-    autoload :Foursq, 'api/4sq'
-    autoload :Tcrnch, 'api/tcrnch'
-    autoload :Nytims, 'api/nytims'
-    autoload :Fxnws, 'api/fxnws'
-    autoload :Amzn, 'api/amzn'
+    #autoload :Foursq, 'api/4sq'
+    #autoload :Tcrnch, 'api/tcrnch'
+    #autoload :Nytims, 'api/nytims'
+    #autoload :Fxnws, 'api/fxnws'
+    #autoload :Amzn, 'api/amzn'
     
     
     autoload :Budurl, 'api/budurl'

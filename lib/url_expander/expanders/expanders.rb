@@ -29,7 +29,7 @@ module UrlExpander
     autoload :Fbme, 'basic/fbme'
     autoload :Ur1ca, 'basic/ur1ca'
     autoload :Supr, 'basic/supr'
-    
+    autoload :T11me, 'basic/t11me'
     
     # Using API
     autoload :Bitly, 'api/bitly'

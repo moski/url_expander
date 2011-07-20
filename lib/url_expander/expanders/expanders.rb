@@ -28,6 +28,7 @@ module UrlExpander
     autoload :Itunes, 'basic/itunes'
     autoload :Fbme, 'basic/fbme'
     autoload :Ur1ca, 'basic/ur1ca'
+    autoload :Supr, 'basic/supr'
     
     
     # Using API

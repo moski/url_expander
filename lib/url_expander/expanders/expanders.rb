@@ -41,6 +41,9 @@ module UrlExpander
     autoload :Googl, 'api/googl'
     autoload :Decenturl, 'api/decenturl'
     autoload :Xrlus, 'api/xrlus'
+    autoload :Dldbz, 'api/dldbz'
+    
+    
     
     # Using Scrapper
     autoload :Qsrli, 'scrape/qsrli'

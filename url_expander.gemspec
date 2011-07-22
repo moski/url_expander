@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Moski}]
-  s.date = %q{2011-07-19}
+  s.authors = ["Moski"]
+  s.date = %q{2011-07-22}
   s.description = %q{Expand short urls from shortning services shuch as bitly and tinyurl}
   s.email = %q{abushaikh@gmail.com}
   s.extra_rdoc_files = [
@@ -32,6 +32,7 @@ Gem::Specification.new do |s|
     "lib/url_expander/expanders/api/budurl.rb",
     "lib/url_expander/expanders/api/cligs.rb",
     "lib/url_expander/expanders/api/decenturl.rb",
+    "lib/url_expander/expanders/api/dldbz.rb",
     "lib/url_expander/expanders/api/googl.rb",
     "lib/url_expander/expanders/api/isgd.rb",
     "lib/url_expander/expanders/api/xrlus.rb",
@@ -49,6 +50,8 @@ Gem::Specification.new do |s|
     "lib/url_expander/expanders/basic/owly.rb",
     "lib/url_expander/expanders/basic/shrtst.rb",
     "lib/url_expander/expanders/basic/snipurl.rb",
+    "lib/url_expander/expanders/basic/supr.rb",
+    "lib/url_expander/expanders/basic/t11me.rb",
     "lib/url_expander/expanders/basic/tco.rb",
     "lib/url_expander/expanders/basic/tighturl.rb",
     "lib/url_expander/expanders/basic/tinycc.rb",
@@ -67,9 +70,9 @@ Gem::Specification.new do |s|
     "url_expander.gemspec"
   ]
   s.homepage = %q{http://github.com/moski/url_expander}
-  s.licenses = [%q{MIT}]
-  s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.5}
+  s.licenses = ["MIT"]
+  s.require_paths = ["lib"]
+  s.rubygems_version = %q{1.6.2}
   s.summary = %q{Expand short url from different services}
 
   if s.respond_to? :specification_version then

@@ -30,7 +30,6 @@ module UrlExpander
       def fetch_url
         data = JSON.parse Request.get("/api/expand?url=#{@short_url}").response.body
         if(data.include?("data"))
-          puts "data == #{data}"
           @long_url = data["data"]["long_url"]
         else
           error = data["error"]

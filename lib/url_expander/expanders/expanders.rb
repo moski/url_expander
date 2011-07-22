@@ -10,7 +10,7 @@ module UrlExpander
     autoload :Tinyurl, 'basic/tinyurl'
     autoload :Twurlnl, 'basic/twurlnl'
     autoload :Shrtst, 'basic/shrtst'
-    autoload :Snipurl, 'basic/Snipurl'
+    autoload :Snipurl, 'basic/snipurl'
     autoload :Adjix, 'basic/adjix'
     autoload :Youtube, 'basic/youtube'
     autoload :Tinycc, 'basic/tinycc'

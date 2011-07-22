@@ -1,4 +1,4 @@
-require 'Hpricot'
+require 'hpricot'
 
 module UrlExpander
   module Expanders

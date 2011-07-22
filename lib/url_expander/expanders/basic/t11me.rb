@@ -6,7 +6,7 @@ module UrlExpander
     # UrlExpander::Client.expand("http://t11.me/YZI-Y6")
     #
     class T11me < UrlExpander::Expanders::Basic
-      PATTERN = %r'(http://t11\.me(/[\w-/]+))'
+      PATTERN = %r'(http://t11\.me(/[\w\-/]+))'
       attr_reader :parent_klass
       
       def initialize(short_url="", options={})

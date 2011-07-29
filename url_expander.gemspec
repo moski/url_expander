@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{url_expander}
-  s.version = "0.1.4"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Moski"]
-  s.date = %q{2011-07-22}
+  s.date = %q{2011-07-29}
   s.description = %q{Expand short urls from shortning services shuch as bitly and tinyurl}
   s.email = %q{abushaikh@gmail.com}
   s.extra_rdoc_files = [
@@ -39,6 +39,7 @@ Gem::Specification.new do |s|
     "lib/url_expander/expanders/basic.rb",
     "lib/url_expander/expanders/basic/adjix.rb",
     "lib/url_expander/expanders/basic/digbig.rb",
+    "lib/url_expander/expanders/basic/dlvrit.rb",
     "lib/url_expander/expanders/basic/doiop.rb",
     "lib/url_expander/expanders/basic/easyurljp.rb",
     "lib/url_expander/expanders/basic/fbme.rb",
@@ -48,6 +49,7 @@ Gem::Specification.new do |s|
     "lib/url_expander/expanders/basic/notlong.rb",
     "lib/url_expander/expanders/basic/nutshellurl.rb",
     "lib/url_expander/expanders/basic/owly.rb",
+    "lib/url_expander/expanders/basic/plizy.rb",
     "lib/url_expander/expanders/basic/shrtst.rb",
     "lib/url_expander/expanders/basic/snipurl.rb",
     "lib/url_expander/expanders/basic/supr.rb",
@@ -56,6 +58,7 @@ Gem::Specification.new do |s|
     "lib/url_expander/expanders/basic/tighturl.rb",
     "lib/url_expander/expanders/basic/tinycc.rb",
     "lib/url_expander/expanders/basic/tinyurl.rb",
+    "lib/url_expander/expanders/basic/tnwto.rb",
     "lib/url_expander/expanders/basic/twurlnl.rb",
     "lib/url_expander/expanders/basic/ur1ca.rb",
     "lib/url_expander/expanders/basic/urlie.rb",

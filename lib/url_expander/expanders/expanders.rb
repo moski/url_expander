@@ -32,6 +32,7 @@ module UrlExpander
     autoload :T11me, 'basic/t11me'
     autoload :Tnwto, 'basic/tnwto'
     autoload :Dlvrit, 'basic/dlvrit'
+    autoload :Plizy, 'basic/plizy'
     
     
     # Using API

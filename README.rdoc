@@ -109,6 +109,18 @@ Require and Use
    UrlExpander::Client.expand("http://itun.es/igG8XL")
 * ur1.ca
    UrlExpander::Client.expand("http://ur1.ca/4qcly")
+* su.pr
+   UrlExpander::Client.expand("http://su.pr/Ad5dk1")
+* t11.me
+   UrlExpander::Client.expand("http://t11.me/YZI-Y6")
+* dld.bz
+   UrlExpander::Client.expand("http://dld.bz/ahsJ2")
+* tnw.to
+   UrlExpander::Client.expand("http://tnw.to/1A3qT")
+* dlvr.it
+   UrlExpander::Client.expand("http://dlvr.it/ccG3g")
+* plizy.com
+   UrlExpander::Client.expand("http://plizy.com/jzW29w")
 
 
 == Adding a new service

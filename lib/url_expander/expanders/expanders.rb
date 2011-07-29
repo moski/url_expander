@@ -30,6 +30,8 @@ module UrlExpander
     autoload :Ur1ca, 'basic/ur1ca'
     autoload :Supr, 'basic/supr'
     autoload :T11me, 'basic/t11me'
+    autoload :Tnwto, 'basic/tnwto'
+    
     
     # Using API
     autoload :Bitly, 'api/bitly'

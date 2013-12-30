@@ -10,7 +10,7 @@ The idea is simple, One expander to expand them all. I've been working on an ana
 
 Download the config used to authenticate with some of the shortening services
 
-  curl -s https://raw.github.com/morizyun/url_expander/config/url_expander.yml -P config/url_expander.yml
+  curl -s https://raw.github.com/morizyun/url_expander/master/config/url_expander.yml -P config/url_expander.yml
 
 Require and Use
   require 'rubygems' # if ruby < 1.9

@@ -66,9 +66,9 @@ module UrlExpander
         unless File.exists?(file_path)
           raise ArgumentError.new('Bitly Expander require login, api_key. Run "rake url_expander:generate_config"')
         else
-          credentials = YAML.load_file(file_path)[:bitly]
-          @login   = credentials[:login]
-          @api_key = credentials[:api_key]
+          credentials = YAML.load_file(file_path)['bitly']
+          @login   = credentials['login']
+          @api_key = credentials['api_key']
         end
       end
     end

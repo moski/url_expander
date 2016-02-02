@@ -6,7 +6,7 @@ module UrlExpander
     # UrlExpander::Client.expand("http://t.co/ZGEGdas")
     #
     class Tco < UrlExpander::Expanders::Basic
-      PATTERN = %r'(https://t\.co(/[\w/]+))'
+      PATTERN = %r'(https?://t\.co(/[\w/]+))'
       attr_reader :parent_klass
       
       def initialize(short_url="", options={})

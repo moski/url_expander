@@ -54,11 +54,13 @@ module UrlExpander
       
       def fetch_url
         data = JSON.parse Request.get("/v3/expand?hash=#{@shortner_key}&login=#{@login}&apiKey=#{@api_key}").response.body
-        expand = data['data']['expand'].first
-        if(data['status_code'] == 200 && !expand.has_key?('error'))
-          @long_url = expand["long_url"]
+        if(data['status_code'] == 200)
+          expand = data['data']['expand'].first
+          if !expand.has_key?('error')
+            @long_url = expand["long_url"]
+          end
         else
-          raise UrlExpander::Error.new(expand['error'],data['status_code'])
+          raise UrlExpander::Error.new(data['status_txt'],data['status_code'])
         end
       end
       
